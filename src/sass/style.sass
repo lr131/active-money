@@ -1,0 +1,60 @@
+$btn-color: #ffdc38
+$btn-hover-color: #ffbb38
+$main-text-color: #5b5b5b
+$dark-text-color: #202020
+$light-text-color: #fff
+$background-color: #f4f9fb
+
+
+@import 'fonts'
+@import 'interface'
+@import 'header'
+@import 'main'
+@import 'about'
+@import 'skills'
+@import 'reason'
+@import 'slogan'
+@import 'footer'
+
+
+.other
+	&s-block
+		text-align: center
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&-button
+		padding: 17px 52px
+
+.others
+	background-color: $background-color
+	&-service__button
+		button
+			padding: 17px 52px
+
+.feedback__button
+	padding: 22px 48px
+
+.questions
+	padding-bottom: 76px
+	&-title
+		color: $light-text-color 
+		&::after
+			margin-top: 12px
+			content: '' 
+			display: block
+			height: 1px
+			background: url(../img/icon-line-white.png) center no-repeat
+	&-block
+		&__text
+			color: $light-text-color 
+			text-align: center
+		&__form
+			margin-top: 33px
+		&__button
+			margin-top: 19px
+	&__button
+		padding: 20px 38px
+
+.contacts__button
+	padding: 17px 30px  

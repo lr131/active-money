@@ -1,0 +1,123 @@
+@-ms-viewport
+	width: device-width
+
+
+input, button
+	&:focus
+		outline: none
+
+*
+	box-sizing: border-box
+
+body
+	font-family: "Proxima Nova", sans-serif
+	color: $main-text-color
+
+section
+	// margin-top: 76px
+	padding-top: 79px
+	padding-bottom: 80px
+
+.container
+	width: 100%
+	padding-right: 15px
+	padding-left: 15px
+	margin-right: auto
+	margin-left: auto
+
+@media (min-width: 576px)
+	.container
+		max-width: 540px
+ 
+
+@media (min-width: 768px)
+	.container
+		max-width: 720px
+ 
+
+@media (min-width: 992px)
+	.container
+		max-width: 960px
+ 
+
+@media (min-width: 1200px)
+	.container
+		max-width: 1140px
+ 
+.col
+	flex: 0 0 33.333333%
+	max-width: 33.333333%
+	position: relative
+
+.background-gradient
+	&::before
+		// display: block;
+		// content: '';
+		// position: absolute;
+		// left: 0;
+		// top: 0;
+		// width: 100%;
+		// height: 50%;
+		// background-color: #202020
+		// background-image: linear-gradient(90deg, #1c8fd4 0%, #7e66e7 3000%)
+		// z-index: -1
+	background: blue url(../img/bg-gradient.png) center no-repeat 
+	background-size: cover
+
+.button
+	cursor: pointer
+	background-color: $btn-color
+	color: $dark-text-color
+	border: 1px solid transparent
+	border-radius: 50px
+	outline: none
+	font-size: 16px
+	font-weight: 700
+	line-height: 25.47px
+	&:hover
+		box-shadow: 0 0 13px rgba(0, 0, 0, 0.19)
+		background-color: $btn-hover-color
+
+.section-title
+	margin-bottom: 29px
+	text-align: center
+	color: $dark-text-color
+	font-family: "Proxima Nova - Semibold"
+	font-size: 26px
+	font-weight: 400
+	line-height: 24px
+	text-transform: uppercase
+	&::after
+		margin-top: 12px
+		content: '' 
+		display: block
+		height: 1px
+		background: url(../img/icon-line.png) center no-repeat
+
+.input
+	border-radius: 0
+	padding-left: 0
+	padding-top: 19px
+	padding-bottom: 19px
+	width: 301px
+	border: 1px solid transparent
+
+.input-icon-wrap
+	overflow: hidden
+	background-color: #fff
+	color: #7b7b7b
+	border: 1px solid transparent
+	border-radius: 50px  
+	display: flex
+	flex-direction: row
+	align-items: center
+	margin-bottom: 15px
+
+.input-with-icon
+	border: none
+	flex: 0
+
+.input-icon, .input-with-icon
+	padding-top: 13px
+	padding-left: 12px
+	padding-bottom: 15px

@@ -1,0 +1,85 @@
+$form-border-color: rgba(#fff,.5)
+
+.main
+  // background-color: blue
+  color: #fff
+  padding-top: 68px
+  padding-bottom: 67px
+
+.main-block
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &-descript
+    &__title
+      margin-bottom: 25px
+      font-size: 48px
+      font-weight: 700
+      line-height: 24px
+    &__subtitle
+      margin-bottom: 11px
+      font-size: 24px
+      font-weight: 400
+      line-height: 24px
+    &__text
+      margin-bottom: 33px
+      font-size: 18px
+      font-weight: 300
+      line-height: 24px
+    &__button
+      button
+        padding: 17px 32px
+        font-size: 16px
+        font-weight: 700
+        line-height: 25.47px
+  &-form
+    overflow: hidden
+    text-align: center
+    &-wrap
+      margin-bottom: 8px
+      padding-top: 34px
+      padding-left: 30px
+      padding-right: 30px
+      padding-bottom: 28px
+      border: 2px solid $form-border-color
+      border-bottom: none
+    &__title
+      margin-bottom: 7px
+      font-size: 22px
+      font-weight: 700
+      line-height: 24px
+      text-transform: uppercase
+    &__text
+      margin-bottom: 29px
+      font-size: 16px
+      font-weight: 400
+      line-height: 21px
+    &__input
+      flex: none
+      display: block
+      // width: 301px
+      // height: 49px
+    &__button
+      button
+        position: relative
+        display: inline-block
+        transform: translateY(-85%)
+        margin-top: 8px
+        padding: 13px 24px
+        font-size: 15px
+        font-weight: 700
+        line-height: 25.47px
+        &::before,&::after
+          content: ""
+          position: absolute
+          top: 50%
+          width: 9999px
+          height: 2px
+          background: $form-border-color
+        &::before
+          right: 100%
+          margin-right: 15px
+
+        &::after
+          left: 100%
+          margin-left: 15px

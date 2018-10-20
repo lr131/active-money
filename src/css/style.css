@@ -1,0 +1,797 @@
+@font-face {
+  font-family: 'Proxima Nova Lt';
+  src: url("../fonts/ProximaNova-Semibold.eot");
+  src: local("Proxima Nova Semibold"), local("ProximaNova-Semibold"), url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  @font-face {}  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: local("Proxima Nova Bold"), local("ProximaNova-Bold"), url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Cn Lt';
+  src: url("../fonts/ProximaNovaCond-LightIt.eot");
+  src: local("Proxima Nova Condensed Light Italic"), local("ProximaNovaCond-LightIt"), url("../fonts/ProximaNovaCond-LightIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaCond-LightIt.woff") format("woff"), url("../fonts/ProximaNovaCond-LightIt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova Lt';
+  src: url("../fonts/ProximaNova-LightIt.eot");
+  src: local("Proxima Nova Light Italic"), local("ProximaNova-LightIt"), url("../fonts/ProximaNova-LightIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-LightIt.woff") format("woff"), url("../fonts/ProximaNova-LightIt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova Cn Rg';
+  src: url("../fonts/ProximaNovaCond-Regular.eot");
+  src: local("Proxima Nova Condensed Regular"), local("ProximaNovaCond-Regular"), url("../fonts/ProximaNovaCond-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaCond-Regular.woff") format("woff"), url("../fonts/ProximaNovaCond-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Th';
+  src: url("../fonts/ProximaNova-Extrabld.eot");
+  src: local("Proxima Nova Extrabold"), local("ProximaNova-Extrabld"), url("../fonts/ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Extrabld.woff") format("woff"), url("../fonts/ProximaNova-Extrabld.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Cn Bl';
+  src: url("../fonts/ProximaNovaCond-Black.eot");
+  src: local("Proxima Nova Condensed Black"), local("ProximaNovaCond-Black"), url("../fonts/ProximaNovaCond-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaCond-Black.woff") format("woff"), url("../fonts/ProximaNovaCond-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Cn Th';
+  src: url("../fonts/ProximaNovaCond-ExtrabldIt.eot");
+  src: local("Proxima Nova Condensed Extrabold Italic"), local("ProximaNovaCond-ExtrabldIt"), url("../fonts/ProximaNovaCond-ExtrabldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaCond-ExtrabldIt.woff") format("woff"), url("../fonts/ProximaNovaCond-ExtrabldIt.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova ExCn Th';
+  src: url("../fonts/ProximaNovaExCn-Thin.eot");
+  src: local("Proxima Nova Extra Condensed Thin"), local("ProximaNovaExCn-Thin"), url("../fonts/ProximaNovaExCn-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExCn-Thin.woff") format("woff"), url("../fonts/ProximaNovaExCn-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Cn Lt';
+  src: url("../fonts/ProximaNovaCond-Semibold.eot");
+  src: local("Proxima Nova Condensed Semibold"), local("ProximaNovaCond-Semibold"), url("../fonts/ProximaNovaCond-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaCond-Semibold.woff") format("woff"), url("../fonts/ProximaNovaCond-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova ExCn Lt';
+  src: url("../fonts/ProximaNovaExCn-SemiboldIt.eot");
+  src: local("Proxima Nova Extra Condensed Semibold Italic"), local("ProximaNovaExCn-SemiboldIt"), url("../fonts/ProximaNovaExCn-SemiboldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExCn-SemiboldIt.woff") format("woff"), url("../fonts/ProximaNovaExCn-SemiboldIt.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova ExCn Lt';
+  src: url("../fonts/ProximaNovaExCn-Semibold.eot");
+  src: local("Proxima Nova Extra Condensed Semibold"), local("ProximaNovaExCn-Semibold"), url("../fonts/ProximaNovaExCn-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExCn-Semibold.woff") format("woff"), url("../fonts/ProximaNovaExCn-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Th';
+  src: url("../fonts/ProximaNova-ThinIt.eot");
+  src: local("Proxima Nova Thin Italic"), local("ProximaNova-ThinIt"), url("../fonts/ProximaNova-ThinIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-ThinIt.woff") format("woff"), url("../fonts/ProximaNova-ThinIt.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova Cn Th';
+  src: url("../fonts/ProximaNovaCond-Thin.eot");
+  src: local("Proxima Nova Condensed Thin"), local("ProximaNovaCond-Thin"), url("../fonts/ProximaNovaCond-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaCond-Thin.woff") format("woff"), url("../fonts/ProximaNovaCond-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Cn Rg';
+  src: url("../fonts/ProximaNovaCond-RegularIt.eot");
+  src: local("Proxima Nova Condensed Regular Italic"), local("ProximaNovaCond-RegularIt"), url("../fonts/ProximaNovaCond-RegularIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaCond-RegularIt.woff") format("woff"), url("../fonts/ProximaNovaCond-RegularIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova ExCn Th';
+  src: url("../fonts/ProximaNovaExCn-ThinIt.eot");
+  src: local("Proxima Nova Extra Condensed Thin Italic"), local("ProximaNovaExCn-ThinIt"), url("../fonts/ProximaNovaExCn-ThinIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExCn-ThinIt.woff") format("woff"), url("../fonts/ProximaNovaExCn-ThinIt.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova Lt';
+  src: url("../fonts/ProximaNova-SemiboldIt.eot");
+  src: local("Proxima Nova Semibold Italic"), local("ProximaNova-SemiboldIt"), url("../fonts/ProximaNova-SemiboldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-SemiboldIt.woff") format("woff"), url("../fonts/ProximaNova-SemiboldIt.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-RegularIt.eot");
+  src: local("Proxima Nova Regular Italic"), local("ProximaNova-RegularIt"), url("../fonts/ProximaNova-RegularIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-RegularIt.woff") format("woff"), url("../fonts/ProximaNova-RegularIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova Cn Th';
+  src: url("../fonts/ProximaNovaCond-Extrabld.eot");
+  src: local("Proxima Nova Condensed Extrabold"), local("ProximaNovaCond-Extrabld"), url("../fonts/ProximaNovaCond-Extrabld.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaCond-Extrabld.woff") format("woff"), url("../fonts/ProximaNovaCond-Extrabld.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova ExCn Th';
+  src: url("../fonts/ProximaNovaExCn-ExtrabldIt.eot");
+  src: local("Proxima Nova Extra Condensed Extrabold Italic"), local("ProximaNovaExCn-ExtrabldIt"), url("../fonts/ProximaNovaExCn-ExtrabldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExCn-ExtrabldIt.woff") format("woff"), url("../fonts/ProximaNovaExCn-ExtrabldIt.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova ExCn Bl';
+  src: url("../fonts/ProximaNovaExCn-BlackIt.eot");
+  src: local("Proxima Nova Extra Condensed Black Italic"), local("ProximaNovaExCn-BlackIt"), url("../fonts/ProximaNovaExCn-BlackIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExCn-BlackIt.woff") format("woff"), url("../fonts/ProximaNovaExCn-BlackIt.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova ExCn Lt';
+  src: url("../fonts/ProximaNovaExCn-LightIt.eot");
+  src: local("Proxima Nova Extra Condensed Light Italic"), local("ProximaNovaExCn-LightIt"), url("../fonts/ProximaNovaExCn-LightIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExCn-LightIt.woff") format("woff"), url("../fonts/ProximaNovaExCn-LightIt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova Cn Th';
+  src: url("../fonts/ProximaNovaCond-ThinIt.eot");
+  src: local("Proxima Nova Condensed Thin Italic"), local("ProximaNovaCond-ThinIt"), url("../fonts/ProximaNovaCond-ThinIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaCond-ThinIt.woff") format("woff"), url("../fonts/ProximaNovaCond-ThinIt.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova ExCn Lt';
+  src: url("../fonts/ProximaNovaExCn-Light.eot");
+  src: local("Proxima Nova Extra Condensed Light"), local("ProximaNovaExCn-Light"), url("../fonts/ProximaNovaExCn-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExCn-Light.woff") format("woff"), url("../fonts/ProximaNovaExCn-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Cn Rg';
+  src: url("../fonts/ProximaNovaCond-BoldIt.eot");
+  src: local("Proxima Nova Condensed Bold Italic"), local("ProximaNovaCond-BoldIt"), url("../fonts/ProximaNovaCond-BoldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaCond-BoldIt.woff") format("woff"), url("../fonts/ProximaNovaCond-BoldIt.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova ExCn Th';
+  src: url("../fonts/ProximaNovaExCn-Extrabld.eot");
+  src: local("Proxima Nova Extra Condensed Extrabold"), local("ProximaNovaExCn-Extrabld"), url("../fonts/ProximaNovaExCn-Extrabld.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExCn-Extrabld.woff") format("woff"), url("../fonts/ProximaNovaExCn-Extrabld.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova ExCn Rg';
+  src: url("../fonts/ProximaNovaExCn-BoldIt.eot");
+  src: local("Proxima Nova Extra Condensed Bold Italic"), local("ProximaNovaExCn-BoldIt"), url("../fonts/ProximaNovaExCn-BoldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExCn-BoldIt.woff") format("woff"), url("../fonts/ProximaNovaExCn-BoldIt.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova Bl';
+  src: url("../fonts/ProximaNova-Black.eot");
+  src: local("Proxima Nova Black"), local("ProximaNova-Black"), url("../fonts/ProximaNova-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Black.woff") format("woff"), url("../fonts/ProximaNova-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova ExCn Rg';
+  src: url("../fonts/ProximaNovaExCn-Bold.eot");
+  src: local("Proxima Nova Extra Condensed Bold"), local("ProximaNovaExCn-Bold"), url("../fonts/ProximaNovaExCn-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExCn-Bold.woff") format("woff"), url("../fonts/ProximaNovaExCn-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Th';
+  src: url("../fonts/ProximaNovaT-Thin.eot");
+  src: local("Proxima Nova Thin"), local("ProximaNovaT-Thin"), url("../fonts/ProximaNovaT-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaT-Thin.woff") format("woff"), url("../fonts/ProximaNovaT-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-BoldIt.eot");
+  src: local("Proxima Nova Bold Italic"), local("ProximaNova-BoldIt"), url("../fonts/ProximaNova-BoldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-BoldIt.woff") format("woff"), url("../fonts/ProximaNova-BoldIt.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova Cn Rg';
+  src: url("../fonts/ProximaNovaCond-Bold.eot");
+  src: local("Proxima Nova Condensed Bold"), local("ProximaNovaCond-Bold"), url("../fonts/ProximaNovaCond-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaCond-Bold.woff") format("woff"), url("../fonts/ProximaNovaCond-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova ExCn Bl';
+  src: url("../fonts/ProximaNovaExCn-Black.eot");
+  src: local("Proxima Nova Extra Condensed Black"), local("ProximaNovaExCn-Black"), url("../fonts/ProximaNovaExCn-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExCn-Black.woff") format("woff"), url("../fonts/ProximaNovaExCn-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova ExCn Rg';
+  src: url("../fonts/ProximaNovaExCn-RegularIt.eot");
+  src: local("Proxima Nova Extra Condensed Regular Italic"), local("ProximaNovaExCn-RegularIt"), url("../fonts/ProximaNovaExCn-RegularIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExCn-RegularIt.woff") format("woff"), url("../fonts/ProximaNovaExCn-RegularIt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova Cn Lt';
+  src: url("../fonts/ProximaNovaCond-Light.eot");
+  src: local("Proxima Nova Condensed Light"), local("ProximaNovaCond-Light"), url("../fonts/ProximaNovaCond-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaCond-Light.woff") format("woff"), url("../fonts/ProximaNovaCond-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Th';
+  src: url("../fonts/ProximaNova-ExtrabldIt.eot");
+  src: local("Proxima Nova Extrabold Italic"), local("ProximaNova-ExtrabldIt"), url("../fonts/ProximaNova-ExtrabldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-ExtrabldIt.woff") format("woff"), url("../fonts/ProximaNova-ExtrabldIt.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova Cn Bl';
+  src: url("../fonts/ProximaNovaCond-BlackIt.eot");
+  src: local("Proxima Nova Condensed Black Italic"), local("ProximaNovaCond-BlackIt"), url("../fonts/ProximaNovaCond-BlackIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaCond-BlackIt.woff") format("woff"), url("../fonts/ProximaNovaCond-BlackIt.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova ExCn Rg';
+  src: url("../fonts/ProximaNovaExCn-Regular.eot");
+  src: local("Proxima Nova Extra Condensed Regular"), local("ProximaNovaExCn-Regular"), url("../fonts/ProximaNovaExCn-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaExCn-Regular.woff") format("woff"), url("../fonts/ProximaNovaExCn-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Lt';
+  src: url("../fonts/ProximaNova-Light.eot");
+  src: local("Proxima Nova Light"), local("ProximaNova-Light"), url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Proxima Nova Cn Lt';
+  src: url("../fonts/ProximaNovaCond-SemiboldIt.eot");
+  src: local("Proxima Nova Condensed Semibold Italic"), local("ProximaNovaCond-SemiboldIt"), url("../fonts/ProximaNovaCond-SemiboldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaCond-SemiboldIt.woff") format("woff"), url("../fonts/ProximaNovaCond-SemiboldIt.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Proxima Nova Bl';
+  src: url("../fonts/ProximaNova-BlackIt.eot");
+  src: local("Proxima Nova Black Italic"), local("ProximaNova-BlackIt"), url("../fonts/ProximaNova-BlackIt.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-BlackIt.woff") format("woff"), url("../fonts/ProximaNova-BlackIt.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic; }
+
+@-ms-viewport {
+  width: device-width; }
+
+input:focus, button:focus {
+  outline: none; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Proxima Nova", sans-serif;
+  color: #5b5b5b; }
+
+section {
+  padding-top: 79px;
+  padding-bottom: 80px; }
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px; } }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px; } }
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px; } }
+
+.col {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  position: relative; }
+
+.background-gradient {
+  background: blue url(../img/bg-gradient.png) center no-repeat;
+  background-size: cover; }
+
+.button {
+  cursor: pointer;
+  background-color: #ffdc38;
+  color: #202020;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25.47px; }
+  .button:hover {
+    -webkit-box-shadow: 0 0 13px rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.19);
+    background-color: #ffbb38; }
+
+.section-title {
+  margin-bottom: 29px;
+  text-align: center;
+  color: #202020;
+  font-family: "Proxima Nova - Semibold";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase; }
+  .section-title::after {
+    margin-top: 12px;
+    content: '';
+    display: block;
+    height: 1px;
+    background: url(../img/icon-line.png) center no-repeat; }
+
+.input {
+  border-radius: 0;
+  padding-left: 0;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  width: 301px;
+  border: 1px solid transparent; }
+
+.input-icon-wrap {
+  overflow: hidden;
+  background-color: #fff;
+  color: #7b7b7b;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 15px; }
+
+.input-with-icon {
+  border: none;
+  -webkit-box-flex: 0;
+  -ms-flex: 0;
+  flex: 0; }
+
+.input-icon, .input-with-icon {
+  padding-top: 13px;
+  padding-left: 12px;
+  padding-bottom: 15px; }
+
+.header-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 93px; }
+  .header-footer-logo {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    display: block;
+    margin-right: 59px;
+    background: url(../img/logo.png) center no-repeat;
+    background-size: 100%;
+    width: 165px;
+    height: 43px; }
+    .header-footer-logo-block {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+  .header-footer-slogan {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px; }
+  .header-footer-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .header-footer-contacts__text {
+      margin-right: 29px; }
+      .header-footer-contacts__text_questions {
+        color: #fff;
+        text-align: right;
+        display: block;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px; }
+      .header-footer-contacts__text_phone {
+        color: #fff;
+        text-align: right;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 24px; }
+        .header-footer-contacts__text_phone a {
+          color: #fff; }
+    .header-footer-contacts__button button {
+      padding: 11px 25px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 22.04px; }
+
+.main {
+  color: #fff;
+  padding-top: 68px;
+  padding-bottom: 67px; }
+
+.main-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .main-block-descript__title {
+    margin-bottom: 25px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 24px; }
+  .main-block-descript__subtitle {
+    margin-bottom: 11px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px; }
+  .main-block-descript__text {
+    margin-bottom: 33px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px; }
+  .main-block-descript__button button {
+    padding: 17px 32px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.47px; }
+  .main-block-form {
+    overflow: hidden;
+    text-align: center; }
+    .main-block-form-wrap {
+      margin-bottom: 8px;
+      padding-top: 34px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 28px;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-bottom: none; }
+    .main-block-form__title {
+      margin-bottom: 7px;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase; }
+    .main-block-form__text {
+      margin-bottom: 29px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21px; }
+    .main-block-form__input {
+      -webkit-box-flex: 0;
+      -ms-flex: none;
+      flex: none;
+      display: block; }
+    .main-block-form__button button {
+      position: relative;
+      display: inline-block;
+      -webkit-transform: translateY(-85%);
+      transform: translateY(-85%);
+      margin-top: 8px;
+      padding: 13px 24px;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 25.47px; }
+      .main-block-form__button button::before, .main-block-form__button button::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 9999px;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.5); }
+      .main-block-form__button button::before {
+        right: 100%;
+        margin-right: 15px; }
+      .main-block-form__button button::after {
+        left: 100%;
+        margin-left: 15px; }
+
+.about {
+  padding-top: 76px;
+  padding-bottom: 77px; }
+  .about-block {
+    margin-top: 67px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .about-block__descr {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+      margin-right: 30px; }
+    .about-block__text p {
+      text-align: justify; }
+    .about-block__video {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+    .about-block__directions {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .about-block__directions:last-child .direction-backgroung {
+        background-color: #7e66e7; }
+
+.direction-text {
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px; }
+
+.direction-backgroung {
+  height: 51px;
+  width: 263px;
+  background-color: #1991d4;
+  z-index: 0; }
+
+.direction-img img {
+  z-index: 3; }
+
+.skills {
+  padding-top: 75px;
+  padding-bottom: 80px;
+  background-color: #f4f9fb;
+  text-align: center; }
+  .skills-button {
+    padding: 21px 33px;
+    margin-right: auto;
+    margin-left: auto; }
+  .skills-block__text {
+    text-align: center; }
+  .skills-features {
+    margin-top: 40px;
+    margin-right: 0;
+    margin-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+
+.skill-feature {
+  margin-bottom: 40px;
+  height: 160px; }
+  .skill-feature__icon {
+    height: 80px; }
+
+.reason {
+  width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  text-align: center;
+  border: 1px solid #eeedee; }
+  .reasons {
+    padding-top: 79px;
+    padding-bottom: 76px; }
+    .reasons-block {
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+    .reasons-sertificate {
+      text-align: center;
+      padding-top: 33px; }
+      .reasons-sertificate__img {
+        width: 150px;
+        margin-bottom: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 13px;
+        border: 1px solid #eeedee;
+        background-color: #ffffff; }
+      .reasons-sertificate__text {
+        font-family: "Proxima Nova";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px; }
+  .reason__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 86px;
+    height: 86px;
+    background-color: #202020;
+    background-image: linear-gradient(45deg, #1c8fd4 0%, #7e66e7 100%);
+    border-radius: 50px;
+    color: #fff;
+    text-align: center;
+    font-family: "Proxima Nova";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px; }
+
+.slogan {
+  padding-top: 86px;
+  padding-bottom: 82px; }
+  .slogan-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .slogan-button {
+    padding: 20px 35px; }
+  .slogan-text {
+    color: #fff; }
+    .slogan-text__title {
+      font-family: "Proxima Nova - Semibold";
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 24px;
+      text-transform: uppercase; }
+    .slogan-text__subtitle {
+      font-family: "Proxima Nova";
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 28px; }
+
+.footer {
+  padding-top: 45px; }
+  .footer-bottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 17px; }
+
+.others-block {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.other-button {
+  padding: 17px 52px; }
+
+.others {
+  background-color: #f4f9fb; }
+  .others-service__button button {
+    padding: 17px 52px; }
+
+.feedback__button {
+  padding: 22px 48px; }
+
+.questions {
+  padding-bottom: 76px; }
+  .questions-title {
+    color: #fff; }
+    .questions-title::after {
+      margin-top: 12px;
+      content: '';
+      display: block;
+      height: 1px;
+      background: url(../img/icon-line-white.png) center no-repeat; }
+  .questions-block__text {
+    color: #fff;
+    text-align: center; }
+  .questions-block__form {
+    margin-top: 33px; }
+  .questions-block__button {
+    margin-top: 19px; }
+  .questions__button {
+    padding: 20px 38px; }
+
+.contacts__button {
+  padding: 17px 30px; }
