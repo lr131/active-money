@@ -176,20 +176,64 @@ $background-color: #f4f9fb
 /* СТРЕЛКИ СЛАЙДЕРА */
 $slider-arrow-width: 18px
 $slider-arrow-height: 40px
+
+/* высчитывание положений стрелок */
+
+$main-slider-width: 0
+$feedback-img-size: 128px
+$slider-arrow-top: ($feedback-img-size / 2) - ($slider-arrow-height/2)
+$slider-arrow-left-right: 35%
+
 .slider-arrow
 	cursor: pointer
 	position: absolute
-	top: 0
-	// right: 0
-	height: 100%
-	width: 22px
+	top: $slider-arrow-top
+	height: $slider-arrow-height
+	width: $slider-arrow-width
 	z-index: 6
 	&__right
-		right: 0
+		right: $slider-arrow-left-right
 		background: url(../img/arrow_next.png) center no-repeat
 	&__left
-		left: 0
+		left: $slider-arrow-left-right
 		background: url(../img/arrow_prev.png) center no-repeat
 
 .slick-track
 	width: 500px
+
+/* MODAL SECTION */
+.overlay-wrap
+	display: none
+.overlay,.thanks,.sertificate-big
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	align-content: center
+	position: fixed
+	color: $light-text-color 
+	top: 0
+	width: 100%
+	height: 100%
+	z-index: 120
+
+.popup-block-form
+	// margin-top: 196px
+	width: 360px
+	margin-right: auto
+	margin-left: auto
+
+.popup-block-form-wrap
+	position: relative
+
+.popup,
+	&-close
+		margin-top: 11px
+		margin-right: 11px
+		position: absolute
+		right: 0
+		top: -12px
+		font-size: 35px
+		font-weight: 300
+		color: $light-text-color 
+		cursor: pointer

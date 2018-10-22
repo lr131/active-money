@@ -1,5 +1,15 @@
 $(document).ready(function(){
 
+	// Маска для телефона
+	$('input[name=user_phone]').mask("+7 (999) 999-99-99");
+
+	// Модальные окна
+		$('.popup-close').on("click", function(){
+			$(".overlay-wrap").hide();
+		});
+		$('.popup-show').on("click", function(){
+			$(".overlay-wrap").show();
+		});
 	// Слайдер
   $('.feedback-slider__top').slick({
 		  slidesToShow: 1,

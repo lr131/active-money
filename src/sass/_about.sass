@@ -4,8 +4,11 @@
 	&-block
 		margin-top: 67px
 		display: flex
+		align-items: center
 		&__descr
-			flex: 0 0 50%
+			display: flex
+			flex-direction: column
+			justify-content: space-between
 			max-width: 50%
 			margin-right: 30px
 		&__text
@@ -36,20 +39,23 @@
 		left: 0
 		bottom: 0
 		height: 51px
-		width: 263px
+		// width: 263px
+		width: 100%
 		background-color: #1991d4
+		border-radius: 3px
 		z-index: -1
 		&-last
 			position: absolute
 			left: 0
 			bottom: 0
 			height: 51px
-			width: 263px
-			background-color: #1991d4
+			width: 100%
 			z-index: -1
 			background-color: #7e66e7
+			border-radius: 3px
 	&-img
 		position: relative
 		img
+			margin-left: 17px
 			display: block
 			z-index: 3
