@@ -589,6 +589,7 @@ section {
       max-width: 50%;
       margin-right: 30px; }
     .about-block__text p {
+      margin-bottom: 10px;
       text-align: justify; }
     .about-block__video {
       -webkit-box-flex: 0;
@@ -598,10 +599,16 @@ section {
       -webkit-box-pack: end;
       -ms-flex-pack: end;
       justify-content: flex-end; }
-    .about-block__directions {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
+    .about-block__direction {
+      -ms-flex-preferred-size: 45%;
+      flex-basis: 45%; }
+      .about-block__directions {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
 
 .direction-text {
   font-family: "Proxima Nova";
@@ -645,7 +652,6 @@ section {
   .skills-block__text {
     text-align: center; }
   .skills-features {
-    margin-top: 40px;
     margin-right: 0;
     margin-left: 0;
     display: -webkit-box;
@@ -660,7 +666,7 @@ section {
 
 .skill-feature {
   margin-bottom: 40px;
-  height: 160px; }
+  margin-top: 40px; }
   .skill-feature__icon {
     height: 80px; }
 
@@ -706,7 +712,8 @@ section {
         margin-left: auto;
         padding: 13px;
         border: 1px solid #eeedee;
-        background-color: #ffffff; }
+        background-color: #ffffff;
+        cursor: pointer; }
       .reasons-sertificate__text {
         font-family: "Proxima Nova";
         font-size: 18px;
@@ -733,6 +740,7 @@ section {
     border-radius: 50px;
     color: #fff;
     text-align: center;
+    vertical-align: middle;
     font-family: "Proxima Nova";
     font-size: 24px;
     font-weight: 400;
@@ -855,10 +863,67 @@ section {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+  .questions-block__input:first-child {
+    margin-right: 10px; }
   .questions-block__button {
     margin-top: 19px; }
   .questions__button {
     padding: 20px 38px; }
+
+.contacts__map {
+  margin-right: 50px; }
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.contacts-text__title {
+  margin-top: 32px;
+  margin-bottom: 10px;
+  color: #202020;
+  font-family: "Proxima Nova - Semibold";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px; }
+
+.contacts-text__title:first-child {
+  margin-top: 0; }
+
+.contacts-text__text {
+  color: #202020;
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px; }
+  .contacts-text__text a {
+    text-decoration: none;
+    color: #202020; }
+
+.contacts-text__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.contacts-text__icon {
+  margin-right: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+    display-flex-direction: column;
+    display-justify-content: center;
+    display-align-items: center;
+  width: 29px;
+  height: 29px;
+  background-color: #1991d4;
+  background-image: linear-gradient(45deg, #1c8fd4 0%, #7e66e7 100%);
+  border-radius: 50px; }
 
 .contacts__button {
   padding: 17px 30px; }
