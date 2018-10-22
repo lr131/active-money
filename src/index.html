@@ -8,6 +8,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/reset.min.css">
+	<!-- Библиотеки -->
+ <link rel="stylesheet" href="slick/slick.min.css"/>
+ <link rel="stylesheet" href="slick/slick-theme.min.css"/>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -288,7 +291,57 @@
 				<div class="h2 section-title">Отзывы наших учеников</div>
 				<!-- /.h2 section-title -->
 				<div class="feedback-block">
-					<div class="feedback-slider"></div>
+					<div class="feedback-slider">
+						<div class="feedback-slider__top">
+							<div class="feedback-slider__item">
+								<div class="feedback-slider__photo"><img src="img/feedback/img-1.png" alt=""></div>
+								<!-- /.feedback-slider__photo -->
+								<div class="feedback-slider__name">Ольга Фролова</div>
+								<!-- /.feedback-slider__name -->
+								<div class="feedback-slider__descr">23 года. Москва</div>
+								<!-- /.feedback-slider__descr -->
+							</div>
+							<!-- /.feedback-slider__item -->
+							<div class="feedback-slider__item">
+								<div class="feedback-slider__photo"><img src="img/feedback/img-2.png" alt=""></div>
+								<!-- /.feedback-slider__photo -->
+								<div class="feedback-slider__name">Татьяна Петрова 29 лет.</div>
+								<!-- /.feedback-slider__name -->
+								<div class="feedback-slider__descr">Нижний Новгород</div>
+								<!-- /.feedback-slider__descr -->
+							</div>
+							<!-- /.feedback-slider__item -->
+							<div class="feedback-slider__item">
+								<div class="feedback-slider__photo"><img src="img/feedback/img-3.png" alt=""></div>
+								<div class="feedback-slider__name">Наталья Емельянова</div>
+								<div class="feedback-slider__descr">19 лет. Самара</div>
+								<!-- /.feedback-slider__descr -->
+							</div>
+							<!-- /.feedback-slider__item -->
+						</div>
+						<!-- /.feedback-slider__top -->
+						<div class="feedback-slider__bottom">
+							<div class="feedback-slider__text">
+								<p>В общем учился сам и потихоньку сливал депозит. В начале июня я решил бросить эту затею и жить дальше спокойно, но мне позвонил Кирилл Р. и 	предложил беспроигрышный вариант. Сказал что договорился с фин. отделом и что мне дадут страховку на мой депозит на две недели, и что их аналитический отдел в курсе всех событий на две недели, и что можно заработать в три раза больше чем сумма на которую я пополнюсь.</p>
+		 					<p>Я взял кредитную карту в банке и перевел все средства 300 000р брокеру. Две недели выполнял слово в слово указания аналитика Кирилла Р. в итоге у меня на счету 0. Мне восстановили средства, и я решил вывести их, но мне сказали что это деньги компании и что их нужно отрабатывать в 20-ти кратном размере</p>
+		 				</div>
+							<!-- /.feedback-slider__text -->
+							<div class="feedback-slider__text">
+								<p>2 В общем учился сам и потихоньку сливал депозит. В начале июня я решил бросить эту затею и жить дальше спокойно, но мне позвонил Кирилл Р. и 	предложил беспроигрышный вариант. Сказал что договорился с фин. отделом и что мне дадут страховку на мой депозит на две недели, и что их аналитический отдел в курсе всех событий на две недели, и что можно заработать в три раза больше чем сумма на которую я пополнюсь.</p>
+		 					<p>Я взял кредитную карту в банке и перевел все средства 300 000р брокеру. Две недели выполнял слово в слово указания аналитика Кирилла Р. в итоге у меня на счету 0. Мне восстановили средства, и я решил вывести их, но мне сказали что это деньги компании и что их нужно отрабатывать в 20-ти кратном размере</p>
+		 				</div>
+							<!-- /.feedback-slider__text -->
+							<div class="feedback-slider__text">
+								<p>3 В общем учился сам и потихоньку сливал депозит. В начале июня я решил бросить эту затею и жить дальше спокойно, но мне позвонил Кирилл Р. и 	предложил беспроигрышный вариант. Сказал что договорился с фин. отделом и что мне дадут страховку на мой депозит на две недели, и что их аналитический отдел в курсе всех событий на две недели, и что можно заработать в три раза больше чем сумма на которую я пополнюсь.</p>
+		 					<p>Я взял кредитную карту в банке и перевел все средства 300 000р брокеру. Две недели выполнял слово в слово указания аналитика Кирилла Р. в итоге у меня на счету 0. Мне восстановили средства, и я решил вывести их, но мне сказали что это деньги компании и что их нужно отрабатывать в 20-ти кратном размере</p>
+		 				</div>
+							<!-- /.feedback-slider__text -->
+						</div>
+						<!-- /.feedback-slider__bottom -->
+						
+						
+
+					</div>
 					<!-- /.feedback-slider -->
 					<button class="button feedback__button">Оставить отзыв</button>
 					<!-- /.feedback__button -->
@@ -452,6 +505,13 @@
 	</footer>
 	<!-- /.footer background-gradient -->
 
-	<script src="js/script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  
+  <script>window.jQuery || document.write("<script src='js/jquery-3.3.1.min.js'><\/script>")</script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src='slick/slick.min.js'></script>
+  <script src='js/script.js'></script>
 </body>
 </html>

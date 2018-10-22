@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Proxima Nova Lt';
   src: url("../fonts/ProximaNova-Semibold.eot");
@@ -834,6 +835,44 @@ section {
 
 .feedback {
   text-align: center; }
+  .feedback-slider {
+    text-align: center; }
+    .feedback-slider__item {
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px; }
+    .feedback-slider__photo {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      width: 200px; }
+      .feedback-slider__photo img {
+        margin-left: auto;
+        margin-right: auto; }
+    .feedback-slider__name {
+      margin-top: 17px;
+      margin-bottom: 7px;
+      color: #202020;
+      font-family: "Proxima Nova Rg";
+      font-size: 18px;
+      font-weight: 700; }
+    .feedback-slider__descr {
+      margin-bottom: 22px;
+      color: #404040;
+      font-family: "Proxima Nova";
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 22px; }
+    .feedback-slider__text {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 744px;
+      font-family: "Proxima Nova";
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 22.14px; }
+      .feedback-slider__text p {
+        margin-bottom: 22px; }
   .feedback__button {
     padding: 22px 48px; }
 
@@ -927,3 +966,17 @@ section {
 
 .contacts__button {
   padding: 17px 30px; }
+
+/* СТРЕЛКИ СЛАЙДЕРА */
+.slider-arrow {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 22px;
+  z-index: 6; }
+  .slider-arrow__right {
+    right: 0;
+    background: url(../img/arrow_next.png) center no-repeat; }
+  .slider-arrow__left {
+    left: 0;
+    background: url(../img/arrow_prev.png) center no-repeat; }

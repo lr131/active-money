@@ -58,6 +58,44 @@ $background-color: #f4f9fb
 
 .feedback
 	text-align: center
+	&-slider
+		text-align: center
+		&__item
+			margin-left: auto
+			margin-right: auto
+			width: 200px
+		&__photo
+			margin-left: auto
+			margin-right: auto
+			text-align: center
+			width: 200px
+			img
+				margin-left: auto
+				margin-right: auto
+		&__name
+			margin-top: 17px
+			margin-bottom: 7px
+			color: $dark-text-color
+			font-family: "Proxima Nova Rg"
+			font-size: 18px
+			font-weight: 700
+		&__descr
+			margin-bottom: 22px
+			color: #404040
+			font-family: "Proxima Nova"
+			font-size: 16px
+			font-weight: 300
+			line-height: 22px
+		&__text
+			margin-left: auto
+			margin-right: auto
+			max-width: 744px
+			font-family: "Proxima Nova"
+			font-size: 16px
+			font-weight: 300
+			line-height: 22.14px
+			p
+				margin-bottom: 22px
 	&__button
 		padding: 22px 48px
 
@@ -134,3 +172,20 @@ $background-color: #f4f9fb
 			border-radius: 50px
 	&__button
 		padding: 17px 30px  
+
+/* СТРЕЛКИ СЛАЙДЕРА */
+$slider-arrow-width: 18px
+$slider-arrow-height: 40px
+.slider-arrow
+  position: absolute
+  top: 0
+  // right: 0
+  height: 100%
+  width: 22px
+  z-index: 6
+  &__right
+    right: 0
+    background: url(../img/arrow_next.png) center no-repeat
+  &__left
+    left: 0
+    background: url(../img/arrow_prev.png) center no-repeat
