@@ -1,0 +1,39 @@
+.questions
+	position: relative
+	padding-bottom: 76px
+	background: url(../img/bg-questions.png) center no-repeat
+	background-size: cover
+	text-align: center
+	&-title
+		color: $light-text-color 
+		&::after
+			margin-top: 12px
+			content: '' 
+			display: block
+			height: 1px
+			background: url(../img/icon-line-white.png) center no-repeat
+	&-block
+		&__text
+			color: $light-text-color 
+			text-align: center
+		&__form
+			margin-top: 33px
+		&__inputs
+			display: flex
+			justify-content: center
+		&__input:first-child
+			margin-right: 10px
+		&__button
+			margin-top: 19px
+	&__button
+		padding: 20px 38px
+
+@madia(max-width: 768px)
+	.questions
+		padding-bottom: 55px
+
+@madia(max-width: 563px)
+	.questions-block__inputs
+		flex-direction: column
+		align-items: center
+		align-content: center

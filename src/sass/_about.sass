@@ -59,3 +59,30 @@
 			margin-left: 17px
 			display: block
 			z-index: 3
+
+
+@media (max-width: 991px)
+	.about-block
+		flex-direction: column
+		justify-content: center
+		align-items: center
+	.about-block__descr,.about-block__video
+		max-width: initial
+
+@media (max-width: 768px)
+	.direction-text
+		font-size: 16px
+	.about
+		padding-top: 50px
+		padding-bottom: 52px
+
+@media (max-width: 555px)
+	.about-block__video
+		display: none
+	.direction-text
+		font-size: 14px
+
+
+@media (max-width: 467px)
+	.about-block__directions
+		flex-direction: column

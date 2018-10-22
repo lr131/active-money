@@ -1,0 +1,48 @@
+/* СТРЕЛКИ СЛАЙДЕРА */
+$slider-arrow-width: 18px
+$slider-arrow-height: 40px
+
+/* высчитывание положений стрелок */
+
+$main-slider-width: 0
+$feedback-img-size: 128px
+$slider-arrow-top: ($feedback-img-size / 2) - ($slider-arrow-height/2)
+$slider-arrow-left-right: 35%
+
+.slider-arrow
+	cursor: pointer
+	position: absolute
+	top: $slider-arrow-top
+	height: $slider-arrow-height
+	width: $slider-arrow-width
+	z-index: 6
+	&__right
+		right: $slider-arrow-left-right
+		background: url(../img/arrow_next.png) center no-repeat
+	&__left
+		left: $slider-arrow-left-right
+		background: url(../img/arrow_prev.png) center no-repeat
+
+.slick-track
+	width: 500px
+
+@media (max-width: 768px)
+	.slider-arrow
+		&__right
+			right: 30%
+		&__left
+			left: 30%
+
+@media (max-width: 477px)
+	.slider-arrow
+		&__right
+			right: 25%
+		&__left
+			left: 25%
+
+@media (max-width: 383px)
+	.slider-arrow
+		&__right
+			right: 20%
+		&__left
+			left: 20%

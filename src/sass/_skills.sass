@@ -1,25 +1,37 @@
 .skill
-  &s
-    padding-top: 75px
-    padding-bottom: 80px
-    background-color: $background-color
-    text-align: center
-    &-button
-      padding: 21px 33px
-      margin-right: auto
-      margin-left: auto
-    &-block
-      &__text
-        text-align: center
-    &-features
-      margin-right: 0
-      margin-left: 0
-      display: flex
-      text-align: center
-      flex-wrap: wrap
-      justify-content: space-between
-  &-feature
-    margin-bottom: 40px
-    margin-top: 40px
-    &__icon
-      height: 80px
+	&s
+		padding-top: 75px
+		padding-bottom: 80px
+		background-color: $background-color
+		text-align: center
+		&-button
+			padding: 21px 33px
+			margin-right: auto
+			margin-left: auto
+		&-block
+			&__text
+				text-align: center
+		&-features
+			margin-right: 0
+			margin-left: 0
+			display: flex
+			text-align: center
+			flex-wrap: wrap
+			justify-content: space-between
+			align-items: center
+			align-content: center
+	&-feature
+		margin-bottom: 40px
+		margin-top: 40px
+		&__icon
+			img
+				height: 56px
+
+@media (max-width: 768px)
+	.skills
+		padding-top: 50px
+		padding-bottom: 52px
+
+@media (max-width: 576px)
+	.skills-features
+		flex-direction: column
