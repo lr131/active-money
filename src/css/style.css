@@ -333,9 +333,9 @@ section {
 
 .col {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 33.333333%;
-  flex: 0 0 33.333333%;
-  max-width: 33.333333%;
+  -ms-flex: 0 0 28%;
+  flex: 0 0 28%;
+  max-width: 28%;
   position: relative; }
 
 .background-gradient::before {
@@ -602,8 +602,6 @@ section {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-      .about-block__directions:last-child .direction-backgroung {
-        background-color: #7e66e7; }
 
 .direction-text {
   font-family: "Proxima Nova";
@@ -611,14 +609,29 @@ section {
   font-weight: 700;
   line-height: 30px; }
 
-.direction-backgroung {
+.direction-background {
+  position: absolute;
+  left: 0;
+  bottom: 0;
   height: 51px;
   width: 263px;
   background-color: #1991d4;
-  z-index: 0; }
+  z-index: -1; }
+  .direction-background-last {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 51px;
+    width: 263px;
+    background-color: #1991d4;
+    z-index: -1;
+    background-color: #7e66e7; }
 
-.direction-img img {
-  z-index: 3; }
+.direction-img {
+  position: relative; }
+  .direction-img img {
+    display: block;
+    z-index: 3; }
 
 .skills {
   padding-top: 75px;
@@ -785,17 +798,43 @@ section {
 
 .others {
   background-color: #f4f9fb; }
-  .others-service__button button {
-    padding: 17px 52px; }
 
-.feedback__button {
-  padding: 22px 48px; }
+.other__button button {
+  padding: 17px 52px; }
+
+.other-service {
+  padding-bottom: 29px;
+  padding-top: 9px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: #fff;
+  border: 1px solid #eeedee; }
+  .other-service__title {
+    margin-top: 35px;
+    color: #202020;
+    font-family: "Proxima Nova - Semibold";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px; }
+  .other-service__text {
+    margin-top: 26px;
+    margin-bottom: 29px;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px; }
+
+.feedback {
+  text-align: center; }
+  .feedback__button {
+    padding: 22px 48px; }
 
 .questions {
   position: relative;
   padding-bottom: 76px;
   background: url(../img/bg-questions.png) center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  text-align: center; }
   .questions-title {
     color: #fff; }
     .questions-title::after {
@@ -809,6 +848,13 @@ section {
     text-align: center; }
   .questions-block__form {
     margin-top: 33px; }
+  .questions-block__inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
   .questions-block__button {
     margin-top: 19px; }
   .questions__button {

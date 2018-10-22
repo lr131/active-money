@@ -26,20 +26,47 @@ $background-color: #f4f9fb
 	&-button
 		padding: 17px 52px
 
-.others
-	background-color: $background-color
-	&-service__button
+.other
+	&s
+		background-color: $background-color
+	&__button
 		button
 			padding: 17px 52px
+	&-service
+		// margin: 0 15px
+		padding-bottom: 29px
+		padding-top: 9px
+		padding-right: 10px
+		padding-left: 10px
+		background-color: #fff
+		border: 1px solid #eeedee
+		&__title
+			margin-top: 35px
+			color: $dark-text-color
+			font-family: "Proxima Nova - Semibold"
+			font-size: 20px
+			font-weight: 400
+			line-height: 22px
+		&__text
+			margin-top: 26px
+			margin-bottom: 29px
+			font-family: "Proxima Nova"
+			font-size: 16px
+			font-weight: 300
+			line-height: 22px
+					
 
-.feedback__button
-	padding: 22px 48px
+.feedback
+	text-align: center
+	&__button
+		padding: 22px 48px
 
 .questions
 	position: relative
 	padding-bottom: 76px
 	background: url(../img/bg-questions.png) center no-repeat
 	background-size: cover
+	text-align: center
 	&-title
 		color: $light-text-color 
 		&::after
@@ -54,6 +81,10 @@ $background-color: #f4f9fb
 			text-align: center
 		&__form
 			margin-top: 33px
+		&__inputs
+			display: flex
+			// justify-content: space-around
+			justify-content: center
 		&__button
 			margin-top: 19px
 	&__button

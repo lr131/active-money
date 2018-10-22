@@ -17,9 +17,9 @@
 			justify-content: flex-end
 		&__directions
 			display: flex
-			&:last-child
-				.direction-backgroung
-					background-color: #7e66e7
+			// &:last-child
+				// .direction-backgroung
+				// 	background-color: #7e66e7
 
 .direction
 	&-text
@@ -27,11 +27,25 @@
 		font-size: 18px
 		font-weight: 700
 		line-height: 30px
-	&-backgroung
+	&-background
+		position: absolute
+		left: 0
+		bottom: 0
 		height: 51px
 		width: 263px
 		background-color: #1991d4
-		z-index: 0
+		z-index: -1
+		&-last
+			position: absolute
+			left: 0
+			bottom: 0
+			height: 51px
+			width: 263px
+			background-color: #1991d4
+			z-index: -1
+			background-color: #7e66e7
 	&-img
+		position: relative
 		img
+			display: block
 			z-index: 3
