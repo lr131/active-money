@@ -43,7 +43,7 @@ $background-color: #f4f9fb
 		&__title
 			margin-top: 35px
 			color: $dark-text-color
-			font-family: "Proxima Nova - Semibold"
+			font-family: "Proxima Nova Semibold"
 			font-size: 20px
 			font-weight: 400
 			line-height: 22px
@@ -141,7 +141,7 @@ $background-color: #f4f9fb
 			margin-top: 32px
 			margin-bottom: 10px
 			color: $dark-text-color
-			font-family: "Proxima Nova - Semibold"
+			font-family: "Proxima Nova Semibold"
 			font-size: 18px
 			font-weight: 400
 			line-height: 22px
@@ -162,9 +162,9 @@ $background-color: #f4f9fb
 		&__icon
 			margin-right: 12px
 			display: flex
-	    flex-direction: column
-	    justify-content: center
-	    align-items: center
+			flex-direction: column
+			justify-content: center
+			align-items: center
 			width: 29px
 			height: 29px
 			background-color: #1991d4
@@ -177,15 +177,19 @@ $background-color: #f4f9fb
 $slider-arrow-width: 18px
 $slider-arrow-height: 40px
 .slider-arrow
-  position: absolute
-  top: 0
-  // right: 0
-  height: 100%
-  width: 22px
-  z-index: 6
-  &__right
-    right: 0
-    background: url(../img/arrow_next.png) center no-repeat
-  &__left
-    left: 0
-    background: url(../img/arrow_prev.png) center no-repeat
+	cursor: pointer
+	position: absolute
+	top: 0
+	// right: 0
+	height: 100%
+	width: 22px
+	z-index: 6
+	&__right
+		right: 0
+		background: url(../img/arrow_next.png) center no-repeat
+	&__left
+		left: 0
+		background: url(../img/arrow_prev.png) center no-repeat
+
+.slick-track
+	width: 500px

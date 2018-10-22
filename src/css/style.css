@@ -371,7 +371,7 @@ section {
   margin-bottom: 29px;
   text-align: center;
   color: #202020;
-  font-family: "Proxima Nova - Semibold";
+  font-family: "Proxima Nova Semibold";
   font-size: 26px;
   font-weight: 400;
   line-height: 24px;
@@ -589,9 +589,11 @@ section {
       flex: 0 0 50%;
       max-width: 50%;
       margin-right: 30px; }
-    .about-block__text p {
-      margin-bottom: 10px;
-      text-align: justify; }
+    .about-block__text {
+      margin-bottom: 26px; }
+      .about-block__text p {
+        margin-bottom: 10px;
+        text-align: justify; }
     .about-block__video {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
@@ -764,7 +766,7 @@ section {
   .slogan-text {
     color: #fff; }
     .slogan-text__title {
-      font-family: "Proxima Nova - Semibold";
+      font-family: "Proxima Nova Semibold";
       font-size: 26px;
       font-weight: 400;
       line-height: 24px;
@@ -821,7 +823,7 @@ section {
   .other-service__title {
     margin-top: 35px;
     color: #202020;
-    font-family: "Proxima Nova - Semibold";
+    font-family: "Proxima Nova Semibold";
     font-size: 20px;
     font-weight: 400;
     line-height: 22px; }
@@ -924,7 +926,7 @@ section {
   margin-top: 32px;
   margin-bottom: 10px;
   color: #202020;
-  font-family: "Proxima Nova - Semibold";
+  font-family: "Proxima Nova Semibold";
   font-size: 18px;
   font-weight: 400;
   line-height: 22px; }
@@ -955,9 +957,16 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-    display-flex-direction: column;
-    display-justify-content: center;
-    display-align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 29px;
   height: 29px;
   background-color: #1991d4;
@@ -969,6 +978,7 @@ section {
 
 /* СТРЕЛКИ СЛАЙДЕРА */
 .slider-arrow {
+  cursor: pointer;
   position: absolute;
   top: 0;
   height: 100%;
@@ -980,3 +990,6 @@ section {
   .slider-arrow__left {
     left: 0;
     background: url(../img/arrow_prev.png) center no-repeat; }
+
+.slick-track {
+  width: 500px; }
