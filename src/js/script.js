@@ -4,12 +4,18 @@ $(document).ready(function(){
 	$('input[name=user_phone]').mask("+7 (999) 999-99-99");
 
 	// Модальные окна
-		$('.popup-close').on("click", function(){
+		$('.popup-close,.popup-button-close').on("click", function(){
 			$(".overlay-wrap").hide();
+			$(".thanks-wrap").hide();
+			$(".sertificate-wrap").hide();
 		});
 		$('.popup-show').on("click", function(){
 			$(".overlay-wrap").show();
 		});
+		$('.reasons-sertificate__img').on("click", function(){
+			$(".sertificate-wrap").show();
+		});
+		
 	// Слайдер
   $('.feedback-slider__top').slick({
 		  slidesToShow: 1,

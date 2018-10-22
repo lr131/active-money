@@ -479,6 +479,7 @@ section {
         font-weight: 700;
         line-height: 24px; }
         .header-footer-contacts__text_phone a {
+          text-decoration: none;
           color: #fff; }
     .header-footer-contacts__button button {
       padding: 11px 25px;
@@ -1008,7 +1009,7 @@ section {
   width: 500px; }
 
 /* MODAL SECTION */
-.overlay-wrap {
+.overlay-wrap, .thanks-wrap, .sertificate-wrap {
   display: none; }
 
 .overlay, .thanks, .sertificate-big {
@@ -1038,6 +1039,9 @@ section {
   width: 360px;
   margin-right: auto;
   margin-left: auto; }
+
+.sertificate-block-form {
+  width: 545px; }
 
 .popup-block-form-wrap {
   position: relative; }
