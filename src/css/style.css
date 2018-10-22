@@ -341,9 +341,9 @@ section {
 
 .col-3 {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 28%;
-  flex: 0 0 28%;
-  max-width: 28%;
+  -ms-flex: 0 0 32%;
+  flex: 0 0 32%;
+  max-width: 32%;
   position: relative; }
 
 .background-gradient::before {
@@ -952,6 +952,7 @@ section {
     align-items: center;
     width: 86px;
     height: 86px;
+    margin-bottom: 14px;
     background-color: #202020;
     background-image: linear-gradient(45deg, #1c8fd4 0%, #7e66e7 100%);
     border-radius: 50px;
@@ -1151,6 +1152,7 @@ section {
   background-color: #fff;
   border: 1px solid #eeedee; }
   .other-service__title {
+    height: 34px;
     margin-top: 35px;
     color: #202020;
     font-family: "Proxima Nova Semibold";
@@ -1158,8 +1160,9 @@ section {
     font-weight: 400;
     line-height: 22px; }
   .other-service__text {
+    min-height: 94px;
     margin-top: 26px;
-    margin-bottom: 29px;
+    padding-bottom: 29px;
     font-family: "Proxima Nova";
     font-size: 16px;
     font-weight: 300;
@@ -1372,6 +1375,11 @@ section {
 
 .sertificate-block-form {
   width: 545px; }
+
+@media (max-width: 768px) {
+  .sertificate-block-form {
+    width: initial;
+    max-width: 545px; } }
 
 .popup-block-form-wrap {
   position: relative; }

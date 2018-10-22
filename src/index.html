@@ -12,6 +12,7 @@
  <link rel="stylesheet" href="slick/slick.min.css"/>
  <link rel="stylesheet" href="slick/slick-theme.min.css"/>
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter50836843 = new Ya.Metrika2({ id:50836843, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/50836843" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 </head>
 <body>
 	<div class="main background-gradient">
@@ -30,7 +31,7 @@
 							<span class="header-footer-contacts__text_phone"><a href="tel:+75351111001">+7 535 111 10 01</a></span>
 						</div>
 						<!-- /.header-footer-contacts__text -->
-						<div class="header-footer-contacts__button"><button class="button popup-show">Перезвоните мне!</button></div>
+						<div class="header-footer-contacts__button"><button class="button popup-show" onclick="yaCounter50836843.reachGoal('feedcall'); return true;">Перезвоните мне!</button></div>
 						<!-- /.header-footer-contacts__button -->
 					</div>
 					<!-- /.header-footer-contacts -->
@@ -44,29 +45,26 @@
 						<!-- /.main-block-descript__subtitle -->
 						<div class="main-block-descript__text">Мы бесплатно научим Вас как всего за 10 часов начать зарабатывать от 100 000 <br> рублей в месяц под строгим контролем профессионалов.</div>
 						<!-- /.main-block-descript__text -->
-						<div class="main-block-descript__button"><button class="button popup-show">Начать зарабатывать!</button></div>
+						<div class="main-block-descript__button"><button class="button popup-show" onclick="yaCounter50836843.reachGoal('feedcall'); return true;">Начать зарабатывать!</button></div>
 						<!-- /.main-block-descript__button -->
 					</div>
 					<!-- /.main-block-descript -->
 					<div class="main-block-form">
-						<form action="#">
+						<form class="header-form" action="mailer/smart.php" method="POST">
 						<div class="main-block-form-wrap">
 							<div class="main-block-form__title">Оставьте заявку</div>
 							<div class="main-block-form__text">Чтобы получить бесплатный пакет <br> материалов о финансовом рынке</div>
-							
-								
-							
 							<div class="input-icon-wrap">
 							  <span class="input-icon"><img src="img/user-icon.png" alt="user"></span>
-							  <input class="input input-with-icon main-block-form__input" name="user_name" placeholder="Ваше имя">
+							  <input required class="input input-with-icon main-block-form__input" name="user_name" placeholder="Ваше имя">
 							</div> 
 							<div class="input-icon-wrap">
 							  <span class="input-icon"><img src="img/phone-icon.png" alt="phone"></span>
-							  <input class="input input-with-icon main-block-form__input" name="user_phone" placeholder="Ваш номер телефона">
+							  <input required class="input input-with-icon main-block-form__input" name="user_phone" placeholder="Ваш номер телефона">
 							</div> 
 						</div>
 						<div class="main-block-form__button">
-							<button type="submit" class="button">Получить материалы</button>
+							<button type="submit" class="button" onclick="yaCounter50836843.reachGoal('sendform'); return true;">Получить материалы</button>
 						</div>
 						</form>
 					</div>
@@ -119,7 +117,7 @@
 					<!-- /.about-block__descr -->
 					<div class="about-block__video">
 						<video  width="555" height="364" controls="controls" poster="img/video-preview.png">
-						 <source src="https://youtu.be/QSatRRHb6TE">
+						 <source src="files/web_analytics.mp4">
 						</video>
 					</div>
 					<!-- /.about-block__video -->
@@ -231,7 +229,7 @@
 						<div class="reason__icon"><span>10</span></div>
 						<!-- /.reason__icon -->
 						<div class="reason__text">
-							10 часов индивидуального обучения
+							10 часов индивидуального <br> обучения
 						</div>
 						<!-- /.reason__text -->
 					</div>
@@ -240,7 +238,7 @@
 						<div class="reason__icon"><span>5</span></div>
 						<!-- /.reason__icon -->
 						<div class="reason__text">
-							 Наша компания 5 лет работает в обучении
+							 Наша компания 5 лет работает <br> в обучении
 						</div>
 						<!-- /.reason__text -->
 					</div>
@@ -249,7 +247,7 @@
 						<div class="reason__icon"><span>1000</span></div>
 						<!-- /.reason__icon -->
 						<div class="reason__text">
-							Прошли более 1000 начинающих трейдеров
+							Прошли более 1000 начинающих <br> трейдеров
 						</div>
 						<!-- /.reason__text -->
 					</div>
@@ -422,20 +420,22 @@
 				<div class="questions-block__text">Задайте их профессиональному трейдеру!</div>
 				<!-- /.questions-block__text -->
 				<div class="questions-block__form">
-					<div class="questions-block__inputs">
-						<div class="input-icon-wrap questions-block__input">
-							  <span class="input-icon"><img src="img/user-icon.png" alt="user"></span>
-							  <input class="input input-with-icon" name="user_name" placeholder="Ваше имя">
-							</div> 
-							<div class="input-icon-wrap">
-							  <span class="input-icon"><img src="img/phone-icon.png" alt="phone"></span>
-							  <input class="input input-with-icon questions-block__input" name="user_phone" placeholder="Ваш номер телефона">
-							</div> 
+					<form class="questions-form" action="mailer/smart.php" method="POST">
+						<div class="questions-block__inputs">
+							<div class="input-icon-wrap questions-block__input">
+								  <span class="input-icon"><img src="img/user-icon.png" alt="user"></span>
+								  <input required class="input input-with-icon" name="user_name" placeholder="Ваше имя">
+								</div> 
+								<div class="input-icon-wrap">
+								  <span class="input-icon"><img src="img/phone-icon.png" alt="phone"></span>
+								  <input required class="input input-with-icon questions-block__input" name="user_phone" placeholder="Ваш номер телефона">
+								</div> 
+						</div>
+						<!-- /.questions-block__inputs -->
+						<div class="questions-block__button"><button  class="button questions__button" type="submit" onclick="yaCounter50836843.reachGoal('sendform'); return true;">Получить консультацию</button></div>
+						<!-- /.questions-block__button -->
+					</form>
 					</div>
-					<!-- /.questions-block__inputs -->
-					<div class="questions-block__button"><button class="button questions__button">Получить консультацию</button></div>
-					<!-- /.questions-block__button -->
-				</div>
 				<!-- /.questions-block__form -->
 			</div>
 			<!-- /.questions-block -->
@@ -476,7 +476,7 @@
 						<!-- /.contacts-text__content -->
 						<div class="contacts-text__title">Или оставьте заявку на звонок</div>
 						<!-- /.contacts-text__title -->
-						<button class="button contacts__button popup-show">Заказать звонок</button>
+						<button class="button contacts__button popup-show" onclick="yaCounter50836843.reachGoal('feedcall'); return true;">Заказать звонок</button>
 					</div>
 					<!-- /.contacts-text -->
 				</div>
@@ -502,7 +502,7 @@
 						<span class="header-footer-contacts__text_phone"><a href="tel:+75351111001">+7 535 111 10 01</a></span>
 					</div>
 					<!-- /.header-footer-contacts__text -->
-					<div class="header-footer-contacts__button"><button class="button popup-show">Перезвоните мне!</button></div>
+					<div class="header-footer-contacts__button"><button class="button popup-show" onclick="yaCounter50836843.reachGoal('feedcall'); return true;">Перезвоните мне!</button></div>
 					<!-- /.header-footer-contacts__button -->
 				</div>
 				<!-- /.header-footer-contacts -->
@@ -520,7 +520,7 @@
 			<div class="popup background-gradient">
 				<div class="popup-form">
 						<div class="main-block-form popup-block-form">
-							<form action="#">
+							<form class="overlay-form" action="mailer/smart.php" method="POST">
 							<div class="main-block-form-wrap popup-block-form-wrap">
 								<div class="popup-close">&times;</div>
 					<!-- /.popup-close -->
@@ -528,15 +528,15 @@
 								<div class="main-block-form__text">Оставьте ваши контактные данные <br> и наш менеджер перезвонит вам</div>
 								<div class="input-icon-wrap">
 								  <span class="input-icon"><img src="img/user-icon.png" alt="user"></span>
-								  <input class="input input-with-icon main-block-form__input" name="user_name" placeholder="Ваше имя">
+								  <input required class="input input-with-icon main-block-form__input" name="user_name" placeholder="Ваше имя">
 								</div> 
 								<div class="input-icon-wrap">
 								  <span class="input-icon"><img src="img/phone-icon.png" alt="phone"></span>
-								  <input class="input input-with-icon main-block-form__input" name="user_phone" placeholder="Ваш номер телефона">
+								  <input required class="input input-with-icon main-block-form__input" name="user_phone" placeholder="Ваш номер телефона">
 								</div> 
 							</div>
 							<div class="main-block-form__button">
-								<button type="submit" class="button">Получить материалы</button>
+								<button class="button" type="submit" onclick="yaCounter50836843.reachGoal('sendform'); return true;">Получить материалы</button>
 							</div>
 							</form>
 						</div>

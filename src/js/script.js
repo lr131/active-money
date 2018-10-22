@@ -2,7 +2,24 @@ $(document).ready(function(){
 
 	// Маска для телефона
 	$('input[name=user_phone]').mask("+7 (999) 999-99-99");
-
+	// Отправка формы
+	$('.questions-form,.overlay-form,.header-form').submit(function(event){
+		event.preventDefault();
+		console.log("$(this).serialize()");
+		console.log($(this).serialize());
+		$.ajax({ 
+			type: "POST",
+			url: "mailer/smart.php",
+			data: $(this).serialize()
+		}).done(function(){
+					$(this).find("input").val("");
+     $("form").trigger("reset");
+     $(".overlay-wrap").hide();
+     $(".thanks-wrap").show();
+   }).fail(function(){
+     alert("Что-то пошло не так! Пожалуйста, отправьте заявку позже");
+   });
+	});
 	// Модальные окна
 		$('.popup-close,.popup-button-close').on("click", function(){
 			$(".overlay-wrap").hide();
