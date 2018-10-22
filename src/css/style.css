@@ -297,6 +297,10 @@
 input:focus, button:focus {
   outline: none; }
 
+a {
+  outline: none;
+  text-decoration: none; }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -592,6 +596,17 @@ section {
   padding-bottom: 67px;
   background: url(../img/bg-first-screen.png) center no-repeat;
   background-size: cover; }
+  .main-arrow-block {
+    margin-top: 95px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
 
 .main-block {
   display: -webkit-box;
