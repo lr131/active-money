@@ -1,8 +1,11 @@
+$map-width: 728px
+$map-heigth: 406px
+
 .contacts
 	&__map
 		margin-right: 50px
-		height: 406px
-		width: 728px
+		height: $map-heigth
+		width: $map-width
 	&-block
 		display: flex
 		align-items: center
@@ -43,8 +46,13 @@
 	&__button
 		padding: 17px 30px 
 
+@media (max-width: 1200px)
+	.contacts__map
+		width: $map-width*0.75
+
 @media (max-width: 991px)
 	.contacts__map
+		width: $map-width
 		margin: 0
 	.contacts-text__title:first-child
 		margin-top: 50px
