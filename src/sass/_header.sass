@@ -71,10 +71,10 @@ $logo-heght: 43px
 		line-height: 14px
 	.header-footer-contacts__button 
 		button
-			padding: 9px 20px;
-			font-size: 11px;
-			font-weight: 700;
-			line-height: 22.04px;
+			padding: 9px 20px
+			font-size: 11px
+			font-weight: 700
+			line-height: 22.04px
 
 
 @media (max-width: 482px)
@@ -83,37 +83,65 @@ $logo-heght: 43px
 	.header-footer-contacts__text
 			flex-grow: 1
 
-@media (max-width: 482px)
-	.header-footer-logo
-		width: $logo-width*0.5
-		height: $logo-heght*0.5
-	.header-footer-contacts__text_phone
-		font-size: 12px
-		line-height: 12px
-	.header-footer-contacts__button 
-		button
-			padding: 10px 12px
-			font-size: 11px
-			font-weight: 700
-			line-height: 15.04px
-
-
-@media (max-width: 424px)
-	.header-footer-logo
-		width: $logo-width*0.4
-		height: $logo-heght*0.4
-		margin-right: 0
+@media (max-width: 487px)
+	.header-footer
+		flex-direction: column
+	.header-footer-logo-block
+		justify-content: space-between
 	.header-footer-contacts
-		justify-content: flex-start
-
-@media (max-width: 377px)
-	.header-footer-contacts__text_questions
-		display: none
-	.header-footer-contacts__text_phone
+		justify-content: space-between
+		margin-top: 15px
+	.header-footer-slogan
+		display: flex
 		font-size: 11px
-		line-height: 11px
+		text-align: right
+	.header-footer-contacts__text_questions
+		text-align: left
 	.header-footer-logo
-		width: $logo-width*0.3
-		height: $logo-heght*0.3
-	.header-footer-contacts__text
-		margin-right: 6px
+		margin-right: 20px
+
+
+@media (max-width: 395px)
+	.header-footer-logo-block
+		flex-direction: column
+		justify-content: center
+	.header-footer-slogan
+		font-size: 13px;
+		line-height: 16px
+		margin-top: 15px
+		text-align: center
+
+// @media (max-width: 482px)
+// 	.header-footer-logo
+// 		width: $logo-width*0.5
+// 		height: $logo-heght*0.5
+// 	.header-footer-contacts__text_phone
+// 		font-size: 12px
+// 		line-height: 12px
+// 	.header-footer-contacts__button 
+// 		button
+// 			padding: 10px 12px
+// 			font-size: 11px
+// 			font-weight: 700
+// 			line-height: 15.04px
+
+
+// @media (max-width: 424px)
+// 	.header-footer-logo
+// 		width: $logo-width*0.4
+// 		height: $logo-heght*0.4
+// 		margin-right: 0
+// 	.header-footer-contacts
+// 		justify-content: flex-start
+
+// @media (max-width: 377px)
+// 	.header-footer-contacts__text_questions
+// 		display: none
+// 	.header-footer-contacts__text_phone
+// 		font-size: 11px
+// 		line-height: 11px
+// 	.header-footer-logo
+// 		width: $logo-width*0.3
+// 		height: $logo-heght*0.3
+// 	.header-footer-contacts__text
+// 		margin-right: 6px
