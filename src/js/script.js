@@ -75,7 +75,8 @@ $(document).ready(function () {
 		arrows: true,
 		prevArrow: '<div class="slider-arrow slider-arrow__left"></div>',
 		nextArrow: '<div class="slider-arrow slider-arrow__right"></div>',
-		fade: true
+		fade: true,
+		
 	});
 	$('.feedback-slider__bottom').slick({
 		slidesToShow: 1,

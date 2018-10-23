@@ -3,28 +3,32 @@ $form-border-color: rgba(#fff,.5)
 .main
 	position: relative
 	color: #fff
-	padding-top: 68px
-	padding-bottom: 67px
+	padding-top: 59px
+	padding-bottom: 63px
 	background: url(../img/bg-first-screen.png) center no-repeat 
 	background-size: cover
 	&-arrow
 		&-block
-			margin-top: 95px
+			margin-top: 40px
 			display: flex
 			justify-content: center
 			align-items: center
 
 .main-block
+	margin-top: 89px
 	display: flex
 	justify-content: space-between
 	align-items: center
 	&-descript
+		margin-top: -26px
+		flex-basis: 76%
 		&__title
 			margin-bottom: 25px
 			font-size: 48px
 			font-weight: 700
 			line-height: 24px
 		&__subtitle
+			font-family: "Proxima Nova Semibold", sans-serif
 			margin-bottom: 11px
 			font-size: 24px
 			font-weight: 400
@@ -36,7 +40,7 @@ $form-border-color: rgba(#fff,.5)
 			line-height: 24px
 		&__button
 			button
-				padding: 17px 32px
+				padding: 17px 37px
 				font-size: 16px
 				font-weight: 700
 				line-height: 25.47px
@@ -44,11 +48,10 @@ $form-border-color: rgba(#fff,.5)
 		overflow: hidden
 		text-align: center
 		&-wrap
-			margin-bottom: 8px
 			padding-top: 34px
 			padding-left: 30px
 			padding-right: 30px
-			padding-bottom: 28px
+			padding-bottom: 36px
 			border: 2px solid $form-border-color
 			border-bottom: none
 		&__title
@@ -58,7 +61,7 @@ $form-border-color: rgba(#fff,.5)
 			line-height: 24px
 			text-transform: uppercase
 		&__text
-			margin-bottom: 29px
+			margin-bottom: 34px
 			font-size: 16px
 			font-weight: 400
 			line-height: 21px
@@ -72,8 +75,8 @@ $form-border-color: rgba(#fff,.5)
 				position: relative
 				display: inline-block
 				transform: translateY(-85%)
-				margin-top: 8px
-				padding: 13px 24px
+				margin-top: 20px
+    padding: 15px 29px
 				font-size: 15px
 				font-weight: 700
 				line-height: 25.47px
@@ -91,6 +94,12 @@ $form-border-color: rgba(#fff,.5)
 				&::after
 					left: 100%
 					margin-left: 15px
+
+@media (max-width: 768px)
+	.main-block-descript__title
+		font-size: 40px
+  font-weight: 700
+  line-height: 34px
 
 @media (max-width: 540px)
 	.main-block
@@ -117,15 +126,11 @@ $form-border-color: rgba(#fff,.5)
 					font-weight: 700
 					line-height: 25.47px
 
-@media (max-width: 394px)
+@media (max-width: 434px)
 	.main-block
 		&-form
 			&-wrap
 				padding: 0
-				// padding-top: 34px
-				// padding-left: 30px
-				// padding-right: 30px
-				// padding-bottom: 28px
 				border: none
 			&__title
 				margin-bottom: 7px
@@ -151,3 +156,5 @@ $form-border-color: rgba(#fff,.5)
 					line-height: 25.47px
 					&::before,&::after
 						content: none
+	.main-block-form__input
+		width: 268px

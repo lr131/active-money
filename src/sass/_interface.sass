@@ -5,6 +5,7 @@
 input, button
 	&:focus
 		outline: none
+		font-family: "Proxima Nova", sans-serif
 
 a
 	outline: none
@@ -31,26 +32,30 @@ section
 
 @media (min-width: 576px)
 	.container
+		padding-left: 15px
 		max-width: 540px
  
 
 @media (min-width: 768px)
 	.container
+		padding-left: 15px
 		max-width: 720px
  
 
 @media (min-width: 992px)
 	.container
+		padding-left: 15px
 		max-width: 960px
  
 
 @media (min-width: 1200px)
 	.container
-		max-width: 1140px
+		padding-left: 45px
+		max-width: 1202px
  
 .col
-	flex: 0 0 28%
-	max-width: 28%
+	flex: 0 0 32%
+	max-width: 32%
 	position: relative
 
 .col-3
@@ -80,24 +85,25 @@ section
 	border: 1px solid transparent
 	border-radius: 50px
 	outline: none
+	font-family: "Proxima Nova", sans-serif
 	font-size: 16px
 	font-weight: 700
 	line-height: 25.47px
 	&:hover
+		font-family: "Proxima Nova", sans-serif
 		box-shadow: 0 0 13px rgba(0, 0, 0, 0.19)
 		background-color: $btn-hover-color
 
 .section-title
-	margin-bottom: 29px
 	text-align: center
 	color: $dark-text-color
-	font-family: "Proxima Nova Semibold"
+	font-family: "Proxima Nova Semibold", sans-serif
 	font-size: 26px
 	font-weight: 400
 	line-height: 24px
 	text-transform: uppercase
 	&::after
-		margin-top: 12px
+		margin-top: 20px
 		content: '' 
 		display: block
 		height: 1px
@@ -110,6 +116,7 @@ section
 	padding-bottom: 19px
 	width: 301px
 	border: 1px solid transparent
+	font-family: "Proxima Nova", sans-serif
 
 .input-icon-wrap
 	overflow: hidden

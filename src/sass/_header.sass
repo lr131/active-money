@@ -4,7 +4,6 @@ $logo-heght: 43px
 .header-footer
 	display: flex
 	justify-content: space-between
-	margin-bottom: 93px
 	&-logo
 		flex: none
 		display: block
@@ -34,13 +33,14 @@ $logo-heght: 43px
 				display: block
 				font-size: 14px
 				font-weight: 300
-				line-height: 24px
+				line-height: 22px
 			&_phone
+				font-family: "Roboto"
 				color: $light-text-color
 				text-align: right
 				font-size: 19px
 				font-weight: 700
-				line-height: 24px
+				line-height: 12px
 				a
 					text-decoration: none
 					color: $light-text-color
@@ -78,6 +78,12 @@ $logo-heght: 43px
 
 
 @media (max-width: 482px)
+	.header-footer-contacts__text_phone
+			font-size: 12px
+	.header-footer-contacts__text
+			flex-grow: 1
+
+@media (max-width: 482px)
 	.header-footer-logo
 		width: $logo-width*0.5
 		height: $logo-heght*0.5
@@ -86,10 +92,10 @@ $logo-heght: 43px
 		line-height: 12px
 	.header-footer-contacts__button 
 		button
-			padding: 12px 15px;
-			font-size: 11px;
-			font-weight: 700;
-			line-height: 15.04px;
+			padding: 10px 12px
+			font-size: 11px
+			font-weight: 700
+			line-height: 15.04px
 
 
 @media (max-width: 424px)

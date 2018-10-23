@@ -13,20 +13,29 @@
 			height: 1px
 			background: url(../img/icon-line-white.png) center no-repeat
 	&-block
+		margin-top: 20px
 		&__text
+			font-family: "Proxima Nova", sans-serif
+			font-size: 18px
+			font-weight: 300
+			line-height: 28px
 			color: $light-text-color 
 			text-align: center
 		&__form
-			margin-top: 33px
+			margin-top: 22px
 		&__inputs
 			display: flex
 			justify-content: center
-		&__input:first-child
-			margin-right: 10px
+		&__input
+			height: 51px
+			&:first-child
+				margin-right: 10px
 		&__button
-			margin-top: 19px
+			margin-top: 3px
 	&__button
-		padding: 20px 38px
+		padding: 14px 32px
+	&-input
+		width: 268px
 
 @media(max-width: 768px)
 	.questions

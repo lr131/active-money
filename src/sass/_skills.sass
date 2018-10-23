@@ -5,12 +5,25 @@
 		background-color: $background-color
 		text-align: center
 		&-button
-			padding: 21px 33px
+			margin-top: 33px
+			padding: 15px 26px
 			margin-right: auto
 			margin-left: auto
 		&-block
+			margin-top: 17px
 			&__text
+				font-family: "Proxima Nova Lt", sans-serif
+				font-size: 18px
+				font-weight: 300
+				line-height: 28px
 				text-align: center
+				p
+					&:first-child
+						margin-bottom: 13px
+					strong
+						color: #202020
+						font-family: "Proxima Nova Rg", sans-serif
+						font-weight: 700
 		&-features
 			margin-right: 0
 			margin-left: 0
@@ -18,14 +31,18 @@
 			text-align: center
 			flex-wrap: wrap
 			justify-content: space-between
-			align-items: center
+			align-items: flex-start
 			align-content: center
 	&-feature
-		margin-bottom: 40px
 		margin-top: 40px
 		&__icon
-			img
-				height: 56px
+			height: 56px
+		&__text
+			margin-top: 6px
+			font-family: "Proxima Nova", sans-serif
+			font-size: 16px
+			font-weight: 300
+			line-height: 22.14px
 
 @media (max-width: 768px)
 	.skills
@@ -35,3 +52,4 @@
 @media (max-width: 576px)
 	.skills-features
 		flex-direction: column
+		align-items: center
